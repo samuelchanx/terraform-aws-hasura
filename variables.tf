@@ -37,8 +37,8 @@ variable "hasura_admin_secret" {
   description = "The admin secret to secure hasura; for admin access"
 }
 
-variable "hasura_jwt_secret_key" {
-  description = "The secret shared key for JWT verification"
+variable "hasura_jwt_secret_jwk_url" {
+  description = "The secret jwk url"
 }
 
 variable "hasura_jwt_secret_algo" {
