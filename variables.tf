@@ -102,6 +102,10 @@ variable "create_iam_service_linked_role" {
   default     = true
 }
 
+variable "publicly_accessible" {
+  default = false
+}
+
 variable "ecs_cluster_name" {
   description = "The name to assign to the ECS cluster"
   default     = "hasura-cluster"
