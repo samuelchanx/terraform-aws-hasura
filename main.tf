@@ -192,7 +192,7 @@ resource "aws_db_instance" "hasura" {
   parameter_group_name   = "default.postgres10"
   multi_az               = var.multi_az
   storage_type           = "gp2"
-  publicly_accessible    = false
+  publicly_accessible    = var.publicly_accessible
 
   # snapshot_identifier       = "hasura"
   allow_major_version_upgrade = false
