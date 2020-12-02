@@ -47,6 +47,7 @@ module "hasura" {
   hasura_jwt_secret_algo          = "ALGORITHM FOR JWT VERIFICATION (HMAC or RS256)"
   hasura_jwt_secret_key           = "YOUR PUBLIC KEY FOR JWT VERIFICATION"
   hasura_console_enabled          = "ENABLE HASURA CONSOLE"
+  hasura_version_tag              = "Your Hasura version, e.g. v1.0.0"
   rds_db_name                     = "YOUR DATABASE NAME"
   rds_instance                    = "YOUR DATABASE INSTANCE SIZE"
   rds_username                    = "YOUR DATABASE USERNAME"
