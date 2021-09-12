@@ -46,6 +46,14 @@ variable "hasura_jwt_secret_algo" {
   default     = "HS256"
 }
 
+variable "hasura_jwt_issuer" {
+  description = "The issuer for JWT verification, e.g. https://my-auth-server.com"
+}
+
+variable "hasura_jwt_audience" {
+  description = "The audience for JWT verification, e.g. myapp-1234"
+}
+
 variable "hasura_console_enabled" {
   description = "Should the Hasura Console web interface be enabled?"
   default     = "true"
