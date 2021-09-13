@@ -54,6 +54,11 @@ variable "hasura_jwt_audience" {
   description = "The audience for JWT verification, e.g. myapp-1234"
 }
 
+variable "hasura_claims_format" {
+  description = "The claims format for hasura, json or stringified_json"
+  default = "json"
+}
+
 variable "hasura_console_enabled" {
   description = "Should the Hasura Console web interface be enabled?"
   default     = "true"
