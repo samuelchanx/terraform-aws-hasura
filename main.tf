@@ -300,7 +300,7 @@ locals {
     },
     {
       name  = "HASURA_GRAPHQL_JWT_SECRET",
-      value = "{\"type\":\"${var.hasura_jwt_secret_algo}\", \"jwk_url\": \"${var.hasura_jwt_secret_jwk_url}\", \"claims_format\": \"stringified_json\", \"audience\": \"var.hasura_jwt_audience\", \"issuer\": \"var.hasura_jwt_issuer\"}"
+      value = "{\"type\":\"${var.hasura_jwt_secret_algo}\", \"jwk_url\": \"${var.hasura_jwt_secret_jwk_url}\", \"claims_format\": \"stringified_json\", \"audience\": \"{var.hasura_jwt_audience}\", \"issuer\": \"{var.hasura_jwt_issuer}\"}"
     }
   ]
 
